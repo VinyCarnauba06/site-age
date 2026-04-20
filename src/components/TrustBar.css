@@ -1,0 +1,54 @@
+.trust-bar {
+  background-color: var(--navy-dark);
+  padding: 40px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  position: relative;
+  z-index: 10;
+  margin-top: -5px;
+}
+
+.trust-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.trust-item {
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.trust-number {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.trust-text {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .trust-grid {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .trust-item {
+    width: 100%;
+  }
+
+  .trust-number {
+    font-size: 2.5rem;
+  }
+}

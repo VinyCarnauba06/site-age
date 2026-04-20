@@ -1,0 +1,105 @@
+.about.section-padding {
+  padding: 120px 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-images {
+  position: relative;
+}
+
+.img-main {
+  width: 85%;
+  border-radius: 4px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  display: block;
+}
+
+.img-overlap {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  width: 55%;
+  border: 10px solid var(--white);
+  border-radius: 4px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 5vw, 2.8rem);
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.about-content p {
+  color: var(--gray-text);
+  margin-bottom: 20px;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.highlight-card {
+  background-color: var(--gray-bg);
+  padding: 30px;
+  border-left: 4px solid var(--accent);
+  margin-top: 40px;
+  border-radius: 4px;
+}
+
+.highlight-card h4 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+  color: var(--navy-dark);
+  font-weight: 600;
+}
+
+.highlight-card p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .img-overlap {
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 20px;
+  }
+
+  .img-main {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about.section-padding {
+    padding: 80px 0;
+  }
+
+  .about-grid {
+    gap: 30px;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+  }
+
+  .about-content p {
+    font-size: 0.95rem;
+  }
+}
