@@ -5,11 +5,10 @@ import About from './components/About'
 import Services from './components/Services'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-import './App.css'
 
-function App() {
+export default function App() {
   return (
-    <>
+    <div className="app">
       <Header />
       <Hero />
       <TrustBar />
@@ -17,8 +16,6 @@ function App() {
       <Services />
       <Contact />
       <Footer />
-    </>
+    </div>
   )
 }
-
-export default App

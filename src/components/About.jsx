@@ -13,14 +13,9 @@ export default function About() {
           viewport={{ once: true }}
         >
           <img
-            src="https://images.unsplash.com/photo-1577416412292-747c6607f055?q=80&w=1000&auto=format&fit=crop"
-            alt="Reunião de negócios"
-            className="img-main"
-          />
-          <img
-            src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?q=80&w=1000&auto=format&fit=crop"
+            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=1000&auto=format&fit=crop"
             alt="Fachada de edifício moderno"
-            className="img-overlap"
+            className="img-main"
           />
         </motion.div>
 
