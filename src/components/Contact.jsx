@@ -77,18 +77,29 @@ export default function Contact() {
         </motion.div>
 
         <motion.div
-          className="contact-map"
+          className="contact-map-card"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4 }}
           viewport={{ once: true }}
         >
-          <iframe
-            src="https://maps.google.com/maps?q=87QV%2BQG+Ponta+Verde%2C+Mace%C3%AD%C3%B3&output=embed&z=17"
-            title="Localização AGE – Ponta Verde, Maceió"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          />
+          <svg className="map-card-pin" viewBox="0 0 24 24">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" fill="currentColor" />
+          </svg>
+          <div className="map-card-body">
+            <p className="map-card-address">
+              R. Dr. Antônio Cansanção, 439<br />
+              Ponta Verde, Maceió – AL · CEP 57035-190
+            </p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=R.+Dr.+Ant%C3%B4nio+Cansa%C3%A7%C3%A3o%2C+439%2C+Ponta+Verde%2C+Mace%C3%AD%C3%B3+-+AL"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="map-card-link"
+            >
+              Ver no Google Maps →
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
