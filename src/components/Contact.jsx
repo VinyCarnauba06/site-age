@@ -75,6 +75,21 @@ export default function Contact() {
             </a>
           </motion.div>
         </motion.div>
+
+        <motion.div
+          className="contact-map"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+        >
+          <iframe
+            src="https://maps.google.com/maps?q=R.+Dr.+Ant%C3%B4nio+Cansa%C3%A7%C3%A3o%2C+439%2C+Ponta+Verde%2C+Mace%C3%AD%C3%B3%2C+AL%2C+Brasil&output=embed"
+            title="Localização AGE – Ponta Verde, Maceió"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          />
+        </motion.div>
       </div>
     </section>
   )

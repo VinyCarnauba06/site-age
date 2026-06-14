@@ -6,6 +6,7 @@ export default function TrustBar() {
     { number: '20', text: 'Anos de\nExperiência' },
     { number: '24h', text: 'Fiscalização\nIninterrupta' },
     { number: '100%', text: 'Transparência\nFinanceira' },
+    { number: '150+', text: 'Unidades\nAdministradas' },
   ]
 
   const containerVariants = {
