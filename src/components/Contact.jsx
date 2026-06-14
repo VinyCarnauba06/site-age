@@ -84,7 +84,7 @@ export default function Contact() {
           viewport={{ once: true }}
         >
           <iframe
-            src="https://maps.google.com/maps?q=AGE+Alian%C3%A7a+Gest%C3%A3o+Empresarial+Mace%C3%AD%C3%B3&output=embed"
+            src="https://maps.google.com/maps?q=87QV%2BQG+Ponta+Verde%2C+Mace%C3%AD%C3%B3&output=embed&z=17"
             title="Localização AGE – Ponta Verde, Maceió"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
