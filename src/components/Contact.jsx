@@ -84,7 +84,7 @@ export default function Contact() {
           viewport={{ once: true }}
         >
           <iframe
-            src="https://maps.google.com/maps?q=R.+Dr.+Ant%C3%B4nio+Cansa%C3%A7%C3%A3o%2C+439%2C+Ponta+Verde%2C+Mace%C3%AD%C3%B3%2C+AL%2C+Brasil&output=embed"
+            src="https://maps.google.com/maps?q=AGE+Alian%C3%A7a+Gest%C3%A3o+Empresarial+Mace%C3%AD%C3%B3&output=embed"
             title="Localização AGE – Ponta Verde, Maceió"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
