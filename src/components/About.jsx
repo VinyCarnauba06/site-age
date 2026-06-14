@@ -20,35 +20,9 @@ export default function About() {
             </div>
             <h4>Nossa Sede</h4>
             <p className="location-address">Ponta Verde, Maceió – AL</p>
-            <span className="location-badge">Sede desde 2004</span>
           </div>
 
-          <div className="about-card timeline-card">
-            <h4>Nossa Trajetória</h4>
-            <div className="timeline">
-              <div className="timeline-item">
-                <div className="timeline-dot" />
-                <div className="timeline-content">
-                  <span className="timeline-year">2004</span>
-                  <span className="timeline-desc">Fundação</span>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-dot" />
-                <div className="timeline-content">
-                  <span className="timeline-year">2012</span>
-                  <span className="timeline-desc">Expansão regional</span>
-                </div>
-              </div>
-              <div className="timeline-item">
-                <div className="timeline-dot" />
-                <div className="timeline-content">
-                  <span className="timeline-year">2024</span>
-                  <span className="timeline-desc">20 anos de tradição</span>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </motion.div>
 
         <motion.div

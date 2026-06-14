@@ -2,8 +2,7 @@ import { motion } from 'framer-motion'
 import './Hero.css'
 
 const stats = [
-  { value: '98%', label: 'Adimplência' },
-  { value: '20+', label: 'Anos de mercado' },
+  { value: '20+', label: 'Anos de atuação' },
   { value: '24h', label: 'Fiscalização' },
 ]
 

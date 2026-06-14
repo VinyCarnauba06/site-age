@@ -13,9 +13,8 @@
 }
 
 .trust-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -63,25 +62,9 @@
   }
 }
 
-@media (max-width: 1024px) {
-  .trust-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 40px 32px;
-  }
-}
-
 @media (max-width: 768px) {
   .trust-bar {
     padding: 48px 16px;
-  }
-
-  .trust-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 36px 24px;
-  }
-
-  .trust-item {
-    gap: 20px;
   }
 
   .trust-number {
@@ -97,11 +80,6 @@
 @media (max-width: 480px) {
   .trust-bar {
     padding: 40px 16px;
-  }
-
-  .trust-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
   }
 
   .trust-number {
