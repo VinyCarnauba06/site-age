@@ -32,6 +32,7 @@ export default function About() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
+          <span className="eyebrow">Quem Somos</span>
           <h2 className="section-title">Nossa sólida trajetória em gestão de patrimônios.</h2>
           <p>
             Muito além da contabilidade básica, a <strong>AGE – Aliança Gestão Empresarial</strong> entrega inteligência

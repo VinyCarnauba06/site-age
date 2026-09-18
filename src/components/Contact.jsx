@@ -15,6 +15,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
+          <span className="eyebrow">Contato</span>
           <h2 className="section-title" style={{ marginBottom: '40px' }}>
             Agende uma reunião com nossos diretores.
           </h2>

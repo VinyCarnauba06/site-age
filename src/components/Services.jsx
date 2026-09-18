@@ -48,6 +48,7 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
+          <span className="eyebrow">Nossa Estrutura</span>
           <h2 className="section-title">Infraestrutura Operacional</h2>
           <p>Departamentos isolados e focados para garantir máxima precisão técnica na administração do seu empreendimento.</p>
         </motion.div>

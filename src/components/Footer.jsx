@@ -6,6 +6,10 @@ export default function Footer() {
   return (
     <footer>
       <div className="container footer-inner">
+        <div className="footer-logo">
+          <img src="/logo-age.png" alt="AGE – Aliança Gestão Empresarial" />
+        </div>
+
         <div className="footer-social">
           <a
             href="https://instagram.com/age.maceio"
