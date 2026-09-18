@@ -1,96 +1,28 @@
 # AGE – Aliança Gestão Empresarial
 
-Website profissional de alta performance para administração de condomínios em Maceió.
+**Site institucional premium para a maior administradora de condomínios de Maceió.**
 
-## 🚀 Stack Técnico
+🔗 **[Acessar o site → site-age-pi.vercel.app](https://site-age-pi.vercel.app/)**
 
-- **React 18** - Framework UI moderna
-- **Vite** - Build tool ultra-rápido
-- **Framer Motion** - Animações suaves
-- **CSS Modules** - Estilos isolados por componente
+---
 
-## 📦 Instalação
+## O que é este projeto
 
-```bash
-npm install
-```
+Site institucional da **AGE – Aliança Gestão Empresarial**, administradora de condomínios com mais de 20 anos de atuação em Maceió, AL. O site foi desenvolvido para transmitir autoridade, gerar confiança e converter visitantes em clientes.
 
-## 🏃 Desenvolvimento
+## Destaques do site
 
-```bash
-npm run dev
-```
+- **Hero de alto impacto** com dashboard interativo e métricas em destaque
+- **TrustBar** com credenciais da empresa: 20+ anos, fiscalização 24h, CRA-AL, 100% digital
+- **Seção Sobre** com card de credenciais (CNPJ + registro CRA-AL)
+- **Cards de serviços** com CTA direto para contato em cada um
+- **Seção de Contato** com promessa de resposta em até 2 horas úteis e proposta gratuita
+- **Design responsivo** — funciona perfeitamente em qualquer dispositivo
 
-Abre automaticamente em `http://localhost:3000`
+## Stack
 
-## 🏗️ Build para Produção
+React 18 · Vite · Framer Motion · CSS puro
 
-```bash
-npm run build
-```
+---
 
-Gera a pasta `dist/` pronta para deploy.
-
-## 📁 Estrutura
-
-```
-src/
-├── components/          # Componentes React reutilizáveis
-│   ├── Header.jsx
-│   ├── Hero.jsx
-│   ├── TrustBar.jsx
-│   ├── About.jsx
-│   ├── Services.jsx
-│   ├── Contact.jsx
-│   └── Footer.jsx
-├── styles/
-│   └── globals.css      # Estilos globais
-├── App.jsx              # Componente raiz
-└── main.jsx            # Entrada React
-```
-
-## ✨ Características
-
-✅ Design responsivo mobile-first  
-✅ Animações suaves com Framer Motion  
-✅ Otimizado para SEO (meta tags, estrutura semântica)  
-✅ Menu mobile automático  
-✅ Header sticky com efeito scroll  
-✅ Scroll suave entre seções  
-✅ 100% acessível (WCAG 2.1)  
-
-## 🎨 Paleta de Cores
-
-- Navy Dark: `#06111C`
-- Navy Main: `#0B2239`
-- Accent Blue: `#4A8BBA`
-- Gray Text: `#6B7280`
-- Background: `#F3F4F6`
-
-## 📱 Responsividade
-
-- Desktop: 1240px (container)
-- Tablet: 992px break
-- Mobile: 768px break
-- Extra small: < 480px
-
-## 🚢 Deploy
-
-### Vercel (Recomendado)
-```bash
-npm install -g vercel
-vercel
-```
-
-### Netlify
-1. Push para GitHub
-2. Conecta o repositório em netlify.com
-3. Build: `npm run build`
-4. Publish directory: `dist`
-
-### Tradicional
-Build localmente e upload a pasta `dist/` para seu servidor.
-
-## 📄 Licença
-
-© 2026 AGE – Aliança Gestão Empresarial. Todos os direitos reservados.
+© 2026 AGE – Aliança Gestão Empresarial · CNPJ: 13.085.902/0001-10 · CRA-AL
