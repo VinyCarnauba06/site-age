@@ -5,6 +5,7 @@ import About from './components/About'
 import Services from './components/Services'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import WhatsAppFloat from './components/WhatsAppFloat'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <Services />
       <Contact />
       <Footer />
+      <WhatsAppFloat />
     </div>
   )
 }

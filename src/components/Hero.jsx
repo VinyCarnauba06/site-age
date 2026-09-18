@@ -47,7 +47,7 @@ export default function Hero() {
           </motion.p>
 
           <motion.div className="hero-cta" variants={itemVariants}>
-            <a href="#contato" className="btn-primary">Falar com um especialista</a>
+            <a href="#contato" className="btn-primary">Falar com um especialista <span className="btn-arrow">→</span></a>
             <a href="#setores" className="btn-ghost">Nossos serviços</a>
           </motion.div>
         </motion.div>
@@ -109,6 +109,9 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
+
+      <div className="hero-orb hero-orb-1" aria-hidden="true"></div>
+      <div className="hero-orb hero-orb-2" aria-hidden="true"></div>
     </section>
   )
 }

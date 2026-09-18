@@ -15,6 +15,16 @@ header.scrolled {
   box-shadow: 0 8px 40px rgba(0, 0, 0, 0.1);
 }
 
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--navy-dark) 0%, var(--accent) 50%, var(--navy-dark) 100%);
+}
+
 .header-content {
   display: flex;
   justify-content: space-between;

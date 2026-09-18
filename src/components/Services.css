@@ -48,13 +48,42 @@
   border-color: var(--accent);
 }
 
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .card-icon {
   width: 56px;
   height: 56px;
-  margin-bottom: 8px;
-  fill: var(--accent);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(74, 139, 186, 0.12);
+  border-radius: 14px;
   color: var(--accent);
-  font-size: 2rem;
+  margin-bottom: 8px;
+  transition: var(--transition);
+}
+
+.card-icon svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
+.card:hover .card-icon {
+  background: var(--accent);
+  color: var(--white);
+}
+
+.card-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: rgba(11, 34, 57, 0.14);
+  line-height: 1;
 }
 
 .card h3 {

@@ -62,9 +62,14 @@ export default function Services() {
         >
           {services.map((service, idx) => (
             <motion.div key={idx} className="card" variants={itemVariants}>
-              <svg className="card-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                <path d={service.icon} fill="currentColor" />
-              </svg>
+              <div className="card-top">
+                <div className="card-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d={service.icon} fill="currentColor" />
+                  </svg>
+                </div>
+                <span className="card-number">0{idx + 1}</span>
+              </div>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
             </motion.div>
