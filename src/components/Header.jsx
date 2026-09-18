@@ -1,58 +1,62 @@
 import { useState, useEffect } from 'react'
+import Icon from './Icons'
+import { navLinks } from '../data/company'
 import './Header.css'
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false)
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 30)
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => window.removeEventListener('scroll', handleScroll)
+    const onScroll = () => setIsScrolled(window.scrollY > 30)
+    onScroll()
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  const navLinks = [
-    { label: 'Quem Somos', href: '#sobre' },
-    { label: 'Diferenciais', href: '#diferenciais' },
-    { label: 'Estrutura', href: '#setores' },
-    { label: 'Contato', href: '#contato' },
-  ]
+  useEffect(() => {
+    if (!isMenuOpen) return
+    const onKey = (e) => e.key === 'Escape' && setIsMenuOpen(false)
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+  }, [isMenuOpen])
+
+  const closeMenu = () => setIsMenuOpen(false)
 
   return (
-    <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
+    <header className={`header${isScrolled ? ' scrolled' : ''}${isMenuOpen ? ' menu-open' : ''}`}>
       <div className="container header-content">
-        <a href="#inicio" className="logo-container">
-          <img src="/logo.png" alt="AGE Gestão Empresarial" />
+        <a href="#inicio" className="logo-container" onClick={closeMenu} aria-label="AGE – ir para o início">
+          <img src="/logo.png" alt="AGE Gestão Empresarial" width="64" height="64" />
         </a>
 
-        <nav className={`nav ${isMobileMenuOpen ? 'open' : ''}`}>
+        <nav id="primary-nav" className="nav" aria-label="Principal">
           <ul className="nav-links">
             {navLinks.map((link) => (
               <li key={link.href}>
-                <a href={link.href} onClick={() => setIsMobileMenuOpen(false)}>
+                <a href={link.href} onClick={closeMenu}>
                   {link.label}
                 </a>
               </li>
             ))}
-            <li>
-              <a href="#" className="btn-portal">
-                Área do Cliente
-              </a>
-            </li>
           </ul>
+          <a href="#contato" className="btn btn-primary nav-cta" onClick={closeMenu}>
+            Solicitar proposta
+            <Icon name="arrow" size={16} className="icon-arrow" />
+          </a>
         </nav>
 
         <button
+          type="button"
           className="menu-toggle"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          aria-label="Menu"
+          onClick={() => setIsMenuOpen((open) => !open)}
+          aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+          aria-expanded={isMenuOpen}
+          aria-controls="primary-nav"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span />
+          <span />
+          <span />
         </button>
       </div>
     </header>

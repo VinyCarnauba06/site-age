@@ -12,12 +12,20 @@ Site institucional da **AGE – Aliança Gestão Empresarial**, administradora d
 
 ## Destaques do site
 
-- **Hero de alto impacto** com dashboard interativo e métricas em destaque
-- **TrustBar** com credenciais da empresa: 20+ anos, fiscalização 24h, CRA-AL, 100% digital
-- **Seção Sobre** com card de credenciais (CNPJ + registro CRA-AL)
-- **Cards de serviços** com CTA direto para contato em cada um
-- **Seção de Contato** com promessa de resposta em até 2 horas úteis e proposta gratuita
-- **Design responsivo** — funciona perfeitamente em qualquer dispositivo
+- **Hero** com proposta de valor, CTAs (proposta gratuita / WhatsApp) e resumo do escopo da administração
+- **TrustBar** flutuante com credenciais: 20+ anos, fiscalização 24h, CRA-AL, 100% digital
+- **Quem somos** com ficha da empresa (CNPJ, registro CRA-AL, sede e atendimento)
+- **Diferenciais** com destaque para a fiscalização exclusiva 24h
+- **Serviços** em 4 departamentos, cada um com seus entregáveis
+- **Como funciona** — jornada em 4 passos, da reunião à gestão contínua
+- **Contato** com formulário que abre o WhatsApp com a mensagem pronta, mapa e dados completos
+- **Rodapé** completo (navegação, serviços, contato, CNPJ) e botão flutuante de WhatsApp
+- **SEO** com meta tags, Open Graph e JSON-LD (ProfessionalService com CNPJ e endereço)
+- **Design responsivo** e acessível (contraste AA, navegação por teclado, `prefers-reduced-motion`)
+
+## Manutenção
+
+Dados da empresa (CNPJ, telefone, e-mail, endereço, serviços, menu) ficam em um único arquivo: `src/data/company.js`.
 
 ## Stack
 
