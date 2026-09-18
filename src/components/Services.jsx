@@ -66,6 +66,12 @@ export default function Services() {
               </svg>
               <h3>{service.title}</h3>
               <p>{service.description}</p>
+              <a href="#contato" className="card-cta">
+                Falar com um especialista
+                <svg viewBox="0 0 20 20" fill="none">
+                  <path d="M4 10h12M10 4l6 6-6 6" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </a>
             </motion.div>
           ))}
         </motion.div>

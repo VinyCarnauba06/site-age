@@ -22,7 +22,22 @@ export default function About() {
             <p className="location-address">Ponta Verde, Maceió – AL</p>
           </div>
 
-
+          <motion.div
+            className="about-card credentials-card"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.15 }}
+            viewport={{ once: true }}
+          >
+            <div className="credentials-icon">
+              <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm-2 16l-4-4 1.41-1.41L10 14.17l6.59-6.59L18 9l-8 8z" fill="currentColor"/>
+              </svg>
+            </div>
+            <h4>Empresa Credenciada</h4>
+            <p className="credentials-detail">Registrada no CRA-AL</p>
+            <p className="credentials-cnpj">CNPJ: 13.085.902/0001-10</p>
+          </motion.div>
         </motion.div>
 
         <motion.div

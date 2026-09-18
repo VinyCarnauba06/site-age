@@ -75,6 +75,43 @@
   letter-spacing: 0.3px;
 }
 
+.credentials-card {
+  margin-top: 0;
+}
+
+.credentials-icon {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(74, 139, 186, 0.15);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+  color: var(--accent);
+}
+
+.credentials-icon svg {
+  width: 22px;
+  height: 22px;
+}
+
+.credentials-detail {
+  color: rgba(255, 255, 255, 0.75) !important;
+  font-size: 0.88rem !important;
+  margin-bottom: 6px !important;
+  line-height: 1.4 !important;
+}
+
+.credentials-cnpj {
+  color: var(--accent) !important;
+  font-size: 0.82rem !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.4px !important;
+  margin-bottom: 0 !important;
+  font-family: 'Inter', monospace;
+}
+
 .timeline {
   display: flex;
   flex-direction: column;

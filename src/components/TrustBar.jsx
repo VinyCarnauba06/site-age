@@ -4,6 +4,9 @@ import './TrustBar.css'
 export default function TrustBar() {
   const stats = [
     { number: '20+', text: 'Anos de\nExperiência' },
+    { number: '24h', text: 'Fiscalização\nContínua' },
+    { number: 'CRA-AL', text: 'Registrada no\nConselho' },
+    { number: '100%', text: 'Digital e\nTransparente' },
   ]
 
   const containerVariants = {

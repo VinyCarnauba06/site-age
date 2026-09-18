@@ -36,7 +36,7 @@ export default function Footer() {
         </p>
 
         <p className="footer-seo">
-          AGE – Administradora de Condomínios em Maceió, Alagoas | CNPJ: [CNPJ] | CRA-AL
+          AGE – Administradora de Condomínios em Maceió, Alagoas | CNPJ: 13.085.902/0001-10 | CRA-AL
         </p>
       </div>
     </footer>

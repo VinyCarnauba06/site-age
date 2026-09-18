@@ -25,7 +25,7 @@ export default function Header() {
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container header-content">
         <a href="#inicio" className="logo-container">
-          <img src="/logo.jpeg" alt="AGE Gestão Empresarial" />
+          <img src="/logo.png" alt="AGE Gestão Empresarial" />
         </a>
 
         <nav className={`nav ${isMobileMenuOpen ? 'open' : ''}`}>

@@ -71,6 +71,40 @@
   line-height: 1.8;
   letter-spacing: 0.2px;
   margin: 0;
+  flex: 1;
+}
+
+.card-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  margin-top: 8px;
+  transition: var(--transition);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.card-cta svg {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.card-cta:hover {
+  color: var(--navy-dark);
+  border-bottom-color: var(--navy-dark);
+}
+
+.card-cta:hover svg {
+  transform: translateX(4px);
+}
+
+.card:hover .card-cta {
+  color: var(--navy-dark);
 }
 
 @media (max-width: 1024px) {

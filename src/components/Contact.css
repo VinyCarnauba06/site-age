@@ -6,6 +6,12 @@
   padding: 120px 24px;
 }
 
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
 
 .contact-container {
   max-width: 1240px;
@@ -87,6 +93,76 @@
   box-shadow: 0 16px 40px rgba(74, 139, 186, 0.3);
 }
 
+.contact-promise {
+  margin-top: 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  background: rgba(74, 139, 186, 0.08);
+  border: 1px solid rgba(74, 139, 186, 0.2);
+  border-radius: 10px;
+  padding: 20px 24px;
+}
+
+.promise-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(74, 139, 186, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--accent);
+}
+
+.promise-icon svg {
+  width: 18px;
+  height: 18px;
+}
+
+.promise-title {
+  font-size: 0.95rem !important;
+  font-weight: 600 !important;
+  color: var(--white) !important;
+  margin-bottom: 4px !important;
+  line-height: 1.4 !important;
+}
+
+.promise-sub {
+  font-size: 0.82rem !important;
+  color: rgba(255, 255, 255, 0.55) !important;
+  margin: 0 !important;
+  line-height: 1.5 !important;
+}
+
+.contact-ctas {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.btn-contact-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 16px 28px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.75) !important;
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.3px;
+  transition: var(--transition);
+}
+
+.btn-contact-secondary:hover {
+  border-color: rgba(255, 255, 255, 0.45);
+  color: var(--white) !important;
+  transform: translateY(-2px);
+}
+
 .contact-map-card {
   margin-top: 48px;
   border-radius: 12px;
@@ -155,6 +231,11 @@
     padding: 80px 16px;
   }
 
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+
   .contact-content {
     max-width: 100%;
   }
@@ -177,10 +258,15 @@
     line-height: 1.6;
   }
 
-  .btn-contact {
+  .contact-ctas {
+    flex-direction: column;
+  }
+
+  .btn-contact,
+  .btn-contact-secondary {
     width: 100%;
     text-align: center;
-    margin-top: 40px;
+    justify-content: center;
   }
 }
 

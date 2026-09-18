@@ -7,7 +7,7 @@ export default function Contact() {
 
   return (
     <section id="contato" className="contact-section section-padding">
-      <div className="container">
+      <div className="container contact-grid">
         <motion.div
           className="contact-content"
           initial={{ opacity: 0, x: -30 }}
@@ -59,10 +59,28 @@ export default function Contact() {
           </motion.div>
 
           <motion.div
-            style={{ marginTop: '40px' }}
+            className="contact-promise"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            <div className="promise-icon">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z" fill="currentColor"/>
+              </svg>
+            </div>
+            <div>
+              <p className="promise-title">Resposta em até 2 horas úteis</p>
+              <p className="promise-sub">Nossos diretores atendem pessoalmente cada consulta.</p>
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="contact-ctas"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
             <a
@@ -72,6 +90,12 @@ export default function Contact() {
               rel="noopener noreferrer"
             >
               Falar pelo WhatsApp
+            </a>
+            <a
+              href="mailto:contato@age.adm.br"
+              className="btn-contact-secondary"
+            >
+              Solicitar Proposta Gratuita
             </a>
           </motion.div>
         </motion.div>

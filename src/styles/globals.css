@@ -9,6 +9,7 @@
   --gray-bg: #F3F4F6;
   --white: #FFFFFF;
   --accent: #4A8BBA;
+  --gold: #C9A84C;
   --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
@@ -194,5 +195,23 @@ section {
   .section-title {
     font-size: 1.35rem;
     margin-bottom: 1.25rem;
+  }
+}
+
+/* Acessibilidade: focus visível para navegação por teclado */
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+  border-radius: 3px;
+}
+
+/* Acessibilidade: respeitar usuários com sensibilidade a movimento */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
   }
 }
